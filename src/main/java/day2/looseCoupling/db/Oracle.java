@@ -1,4 +1,4 @@
-package day2.oracle;
+package day2.looseCoupling.db;
 
 public class Oracle {
 	public void connection() {
