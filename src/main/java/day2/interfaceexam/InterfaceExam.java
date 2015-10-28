@@ -1,24 +1,38 @@
-package day2.abstractexam;
+package day2.interfaceexam;
 
-abstract class Afunction {
-	public abstract void searchInform(String name, int phoneNum);
-	public abstract void runService(int memberId, int request);
+interface Afunction {
+	void searchInform(String name, int phoneNum);
+	void runService(int memberId, int request);
 }
 
-class AfunctionImpl extends Afunction {
+class AfunctionImpl implements Afunction {
+
+// @Override
+// public void searchInform(String name, int phoneNum) {
+// // TODO Auto-generated method stub
+//
+// }
+//
+// @Override
+// public void runService(int memberId, int request) {
+// // TODO Auto-generated method stub
+//
+// }
 
 	@Override
 	public void searchInform(String name, int phoneNum) {
 		System.out.println(name + " 고객님의 정보를 찾았습니다");
+
 	}
 
 	@Override
 	public void runService(int memberId, int request) {
 		System.out.println(memberId + " 고객님의 요청하신 서비스를 수행합니다");
+
 	}
 }
 
-public class AbstractExam {
+public class InterfaceExam {
 
 	public static void main(String[] args) {
 		Afunction aref = new AfunctionImpl();
