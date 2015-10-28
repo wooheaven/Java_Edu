@@ -14,7 +14,7 @@ public class StaticClass1 {
 				
 		public void add(){
 			System.out.println(num1);  //정상출력
-			System.out.println(num2);  //컴파일 에러
+//			System.out.println(num2);  //컴파일 에러
 		}
 	}	
 }
