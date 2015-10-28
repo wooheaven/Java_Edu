@@ -1,6 +1,6 @@
 package day2.looseCoupling.db;
 
-public class Oracle {
+public class Oracle implements DB{
 	public void connection() {
 		System.out.println("오라클에 접속했습니다");
 	}
