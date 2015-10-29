@@ -1,4 +1,4 @@
-package day3.shipseparate;
+package day3.shipgeneric;
 
 class Electronic {
 
@@ -29,42 +29,34 @@ class Food {
 	}
 }
 
-class ElecShip {
-	Electronic goods;
+class GoodsShip<T> {
+	T goods;
 
-	public void boxing(Electronic goods) {
+	public void boxing(T goods) {
 		this.goods = goods;
 	}
 
-	public Electronic unBoxing() {
+	public T unBoxing() {
 		return goods;
 	}
 }
 
-class FoodShip {
-	Food goods;
-
-	public void boxing(Food goods) {
-		this.goods = goods;
-	}
-
-	public Food unBoxing() {
-		return goods;
-	}
-}
-
-public class ShippingSeparate {
+public class ShippingGeneric {
 
 	public static void main(String[] args) {
-		ElecShip gs1 = new ElecShip();
+		GoodsShip<Electronic> gs1 = new GoodsShip<Electronic>();
 		gs1.boxing(new Electronic("배송시작"));
 		Electronic e1 = (Electronic) gs1.unBoxing();
 		e1.currentState();
 
-//		FoodShip gs2 = new FoodShip();
-//		gs2.boxing("식품");					// Exception
-//		Food f1 = (Food) gs2.unBoxing();
-//		f1.currentState();
+		GoodsShip<Food> gs2 = new GoodsShip<Food>();
+		gs2.boxing(new Food("배송중"));
+		Food f1 = (Food) gs2.unBoxing();
+		f1.currentState();
 
+//		GoodsShip<Food> gs3 = new GoodsShip<Food>();
+//		gs3.boxing("식품");
+//		Food f2 = (Food) gs3.unBoxing();
+//		f2.currentState();
 	}
 }
