@@ -10,25 +10,46 @@ class Data {
 		this.num = num;
 	}
 
+	// @Override
+	// public int hashCode() {
+	// return num % 3;
+	// }
+	//
+	// @Override
+	// public boolean equals(Object obj) {
+	// Data dt = (Data) obj;
+	// if (dt.num == num)
+	// return true;
+	// else
+	// return false;
+	// }
+
 	@Override
 	public int hashCode() {
-		return num % 3;
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + num;
+		return result;
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-		Data dt = (Data) obj;
-		if (dt.num == num)
+		if (this == obj)
 			return true;
-		else
+		if (obj == null)
 			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Data other = (Data) obj;
+		if (num != other.num)
+			return false;
+		return true;
 	}
 
 	@Override
 	public String toString() {
 		return "Data [num=" + num + "]";
 	}
-
 }
 
 public class HashSetCheck2 {
