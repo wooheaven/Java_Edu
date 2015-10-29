@@ -22,7 +22,12 @@ public class ArrayListUsing {
 			System.out.println("one index " + i + " : value "
 					+ mArrayList.get(i));
 		}
-
+		System.out.println();
+		
+		Iterator<Integer> itr = mArrayList.iterator();
+		while(itr.hasNext()){
+			System.out.println(itr.next());
+		}
 		System.out.println();
 
 		// ArrayList 특정 index 값 제거
@@ -32,6 +37,12 @@ public class ArrayListUsing {
 		for (int i = 0; i < mArrayList.size(); i++) {
 			System.out.println("two index " + i + " : value "
 					+ mArrayList.get(i));
+		}
+		System.out.println();
+		
+		itr = mArrayList.iterator();
+		while(itr.hasNext()){
+			System.out.println(itr.next());
 		}
 		System.out.println();
 
@@ -44,12 +55,22 @@ public class ArrayListUsing {
 					+ mArrayList.get(i));
 		}
 		System.out.println();
+		itr = mArrayList.iterator();
+		while(itr.hasNext()){
+			System.out.println(itr.next());
+		}
+		System.out.println();
 
 		// ArrayList 특정 index 값 수정
 		mArrayList.set(0, 77779);
 		for (int i = 0; i < mArrayList.size(); i++) {
 			System.out.println("four index " + i + " : value "
 					+ mArrayList.get(i));
+		}
+		System.out.println();
+		itr = mArrayList.iterator();
+		while(itr.hasNext()){
+			System.out.println(itr.next());
 		}
 		System.out.println();
 
@@ -62,6 +83,12 @@ public class ArrayListUsing {
 		for (int i = 0; i < mArrayList.size(); i++) {
 			System.out.println("five index " + i + " : value "
 					+ mArrayList.get(i));
+		}
+		System.out.println();
+		
+		itr = mArrayList.iterator();
+		while(itr.hasNext()){
+			System.out.println(itr.next());
 		}
 		System.out.println();
 
@@ -79,5 +106,4 @@ public class ArrayListUsing {
 
 		System.out.println("eight : empty " + isEmpty + "\n");
 	}
-
 }
