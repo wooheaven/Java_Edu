@@ -1,4 +1,4 @@
-package day3hashsetbasic;
+package day3.hashsetbasic;
 
 import java.util.Iterator;
 import java.util.HashSet;
