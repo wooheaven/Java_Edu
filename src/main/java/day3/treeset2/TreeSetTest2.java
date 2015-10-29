@@ -12,19 +12,26 @@ class Student implements Comparable<Student> {
 		this.score = score;
 	}
 
-	public int compareTo(Student p) {
-		if (score > p.score)
-			return 1;
-		else if (score < p.score)
-			return -1;
-		else
-			return 0;
-	}
+//	public int compareTo(Student p) {
+//		if (score > p.score)
+//			return 1;
+//		else if (score < p.score)
+//			return -1;
+//		else
+//			return 0;
+//	}
 
+	@Override
+	public int compareTo(Student s) {
+		// TODO Auto-generated method stub
+		return this.subject.compareTo(s.subject);
+	}
+	
 	@Override
 	public String toString() {
 		return "Student [subject=" + subject + ", score=" + score + "]";
 	}
+
 }
 
 public class TreeSetTest2 {
