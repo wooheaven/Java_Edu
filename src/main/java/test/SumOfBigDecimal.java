@@ -9,7 +9,7 @@ public class SumOfBigDecimal {
 	public static void main(String[] args) {
 		BigDecimal sum = new BigDecimal("0");
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(new File("/home/rwoo/tmp/2_xMA_Interpolation_BETA_NPN_BJT/5.txt")));
+			BufferedReader br = new BufferedReader(new FileReader(new File("/home/rwoo/tmp/3_xMA_Normalize/4.txt")));
 			String stringValue;
 			while(null!=(stringValue=br.readLine())){
 				sum=sum.add(new BigDecimal(stringValue));
