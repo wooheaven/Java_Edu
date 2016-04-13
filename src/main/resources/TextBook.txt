@@ -1,1 +1,24 @@
 Java Programming Core
+01 First Step
+1 OOP(Object Oriented Programming)
+1.1 Definition of OOP
+	Object is a kind of how to define something as two parts.
+	Object depends on a belief "There is a something, and it must consists of properties and it does function."
+	Car consists of properties and it does function.
+	Car consists of many things such as tire, handle, break and it does move.
+1.1.1 Object in Java
+	Object consists of properties and it does function.
+1.1.2 Class in Java
+	Class consists of variables/constants and it does methods.
+	Class is made by code. And the code define variables/constants and methods.
+1.1.3 Instance in Java
+	Instance is a class on memory
+	For example, Car myCar = new Car();
+	[Car] is a class.
+	[new Car();] makes instance according to [Car] class.
+	[=] assign right instance to left variable.
+	[myCar] is reference variable which has address value of the instance made by [new Car();]
+02 Second Step
+03 Third Step
+04 Fourth Step
+05 Fifth Step
